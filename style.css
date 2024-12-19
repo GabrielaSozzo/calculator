@@ -1,4 +1,9 @@
 body {
+  background: url("https://img.freepik.com/vetores-premium/formulas-matematicas-fisicas-e-quimicas_1177214-1368.jpg?w=740");
+  background-attachment: fixed;
+  background-color: rgb(201, 197, 197);
+  background-blend-mode: overlay;
+
   width: 500px;
   margin: 4% auto;
   font-family: "Source Sans Pro", sans-serif;
@@ -10,15 +15,17 @@ body {
 }
 
 .calculator {
+  background: #aaaaaac5;
   padding: 20px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.681);
+  border-radius: 6px;
 }
 
 .input {
-  border: 1px solid #ddd;
-  border-radius: 1px;
+  background-color: #aaa;
+  border: 1px solid rgb(74, 74, 74);
+  border-radius: 6px;
   height: 60px;
   padding-right: 15px;
   padding-top: 10px;
@@ -32,19 +39,13 @@ body {
 .input:hover {
   border: 1px solid #bbb;
   -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-}
-
-.buttons {
-}
-
-.operators {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.681);
 }
 
 .operators div {
   display: inline-block;
   border: 1px solid #bbb;
-  border-radius: 1px;
+  border-radius: 6px;
   width: 80px;
   text-align: center;
   padding: 10px;
@@ -58,7 +59,7 @@ body {
 .operators div:hover {
   background-color: #ddd;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.681);
   border-color: #aaa;
 }
 
@@ -73,7 +74,7 @@ body {
 .numbers div {
   display: inline-block;
   border: 1px solid #ddd;
-  border-radius: 1px;
+  border-radius: 6px;
   width: 80px;
   text-align: center;
   padding: 10px;
@@ -87,7 +88,7 @@ body {
 .numbers div:hover {
   background-color: #f1f1f1;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.681);
   border-color: #bbb;
 }
 
@@ -97,15 +98,26 @@ body {
 
 div.equal {
   display: inline-block;
-  border: 1px solid #3079ed;
-  border-radius: 1px;
+  border: 1px solid #3d403f;
+  border-radius: 6px;
   width: 17%;
   text-align: center;
-  padding: 127px 10px;
+  padding: 123px 10px;
   margin: 10px 6px 10px 0;
   vertical-align: top;
   cursor: pointer;
   color: #fff;
-  background-color: #4d90fe;
+  background-color: #727373;
   transition: all 0.2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: #828484;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.248);
+  border-color: #484b49;
+}
+
+div.equal:active {
+  font-weight: bold;
 }
